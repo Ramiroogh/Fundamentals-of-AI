@@ -7,6 +7,7 @@ Cuando un usuario interactúa con ChatGPT, el modelo recibe como entrada el hist
 
 GPT-3 se ha entrenado con unos 500.000 millones de tokens, lo que permite a sus modelos lingüísticos asignar significados con mayor facilidad y predecir textos de seguimiento plausibles mediante su mapeo en el espacio vectorial. Muchas palabras corresponden a un único token, aunque las palabras más largas o complejas suelen dividirse en varios tokens. Por término medio, los tokens tienen una longitud aproximada de cuatro caracteres.
 
+## Fase de Inferencia
 Durante la fase de inferencia, en la que el modelo genera respuestas, se utiliza un proceso conocido como autoregresión. Esto significa que el modelo predice una palabra cada vez, condicionado por el historial de la conversación y las palabras generadas anteriormente. Para garantizar que la respuesta generada sea coherente y pertinente, se utilizan técnicas como el muestreo top-p y el escalado de temperatura.
 
 En resumen, el parámetro top-p proporciona al modelo un conjunto de opciones (tokens) entre las que elegir, mientras que la temperatura determina la probabilidad de elegir un determinado token. Cuando la temperatura se fija en 0, el modelo elegirá sólo los tokens más "populares" (palabras que se encuentran juntas con más frecuencia en los datos de texto con los que se entrenó ChatGPT):
